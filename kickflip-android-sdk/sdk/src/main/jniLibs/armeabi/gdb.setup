@@ -1,0 +1,2 @@
+set solib-search-path /Users/admin/muvva/ndk/android-ndk-r15c/sources/wraperffmpeg/FFmpegWrapper-Android/FFmpegWrapper/obj/local/armeabi
+directory /Users/admin/muvva/ndk/android-ndk-r15c/sysroot /Users/admin/muvva/ndk/android-ndk-r15c/sources/wraperffmpeg/FFmpegWrapper-Android/FFmpegWrapper/jni/include /Users/admin/muvva/ndk/android-ndk-r15c/sources/cxx-stl/system
