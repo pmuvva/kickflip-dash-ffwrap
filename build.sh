@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ffmpeg-3.3.4
+cd ffmpeg
 NDK=~/muvva/ndk/android-ndk-r15c
 SYSROOT=$NDK/platforms/android-18/arch-arm/
 TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64
@@ -7,7 +7,7 @@ TOOLCHAIN=$NDK/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64
 # darwin-x86_64 is for Mac OS X, but you knew that.
 function build_one
 {
-./configure \
+../configure \
     --prefix=$PREFIX \
     --enable-shared \
     --enable-static \
@@ -30,6 +30,6 @@ make -j4
 make install
 }
 CPU=arm
-PREFIX=$(pwd)/android/$CPU 
+PREFIX=$(pwd)/../android/$CPU 
 ADDI_CFLAGS="-marm"
 build_one
